@@ -1,0 +1,765 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Hospital_Data' inline='true' name='federated.0z0fpth11b7yxv1etgfbp06lr9zt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Hospital_Data' name='textscan.0dlotr90wp5qai18pnl2500vmglc'>
+            <connection class='textscan' directory='C:/Users/OAKPEN 1/Downloads' filename='Hospital_Data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0dlotr90wp5qai18pnl2500vmglc' name='Hospital_Data.csv' table='[Hospital_Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_NG' separator=','>
+            <column datatype='integer' name='case_id' ordinal='0' />
+            <column datatype='integer' name='Hospital_code' ordinal='1' />
+            <column datatype='string' name='Hospital_type_code' ordinal='2' />
+            <column datatype='integer' name='City_Code_Hospital' ordinal='3' />
+            <column datatype='string' name='Hospital_region_code' ordinal='4' />
+            <column datatype='integer' name='Available Extra Rooms in Hospital' ordinal='5' />
+            <column datatype='string' name='Department' ordinal='6' />
+            <column datatype='string' name='Ward_Type' ordinal='7' />
+            <column datatype='string' name='Ward_Facility_Code' ordinal='8' />
+            <column datatype='integer' name='Bed Grade' ordinal='9' />
+            <column datatype='integer' name='patientid' ordinal='10' />
+            <column datatype='integer' name='City_Code_Patient' ordinal='11' />
+            <column datatype='string' name='Type of Admission' ordinal='12' />
+            <column datatype='string' name='Severity of Illness' ordinal='13' />
+            <column datatype='integer' name='Visitors with Patient' ordinal='14' />
+            <column datatype='string' name='Age' ordinal='15' />
+            <column datatype='integer' name='Admission_Deposit' ordinal='16' />
+            <column datatype='string' name='Stay' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0dlotr90wp5qai18pnl2500vmglc' name='Hospital_Data.csv' table='[Hospital_Data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_NG' separator=','>
+            <column datatype='integer' name='case_id' ordinal='0' />
+            <column datatype='integer' name='Hospital_code' ordinal='1' />
+            <column datatype='string' name='Hospital_type_code' ordinal='2' />
+            <column datatype='integer' name='City_Code_Hospital' ordinal='3' />
+            <column datatype='string' name='Hospital_region_code' ordinal='4' />
+            <column datatype='integer' name='Available Extra Rooms in Hospital' ordinal='5' />
+            <column datatype='string' name='Department' ordinal='6' />
+            <column datatype='string' name='Ward_Type' ordinal='7' />
+            <column datatype='string' name='Ward_Facility_Code' ordinal='8' />
+            <column datatype='integer' name='Bed Grade' ordinal='9' />
+            <column datatype='integer' name='patientid' ordinal='10' />
+            <column datatype='integer' name='City_Code_Patient' ordinal='11' />
+            <column datatype='string' name='Type of Admission' ordinal='12' />
+            <column datatype='string' name='Severity of Illness' ordinal='13' />
+            <column datatype='integer' name='Visitors with Patient' ordinal='14' />
+            <column datatype='string' name='Age' ordinal='15' />
+            <column datatype='integer' name='Admission_Deposit' ordinal='16' />
+            <column datatype='string' name='Stay' ordinal='17' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₦&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_NG&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[case_id]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>case_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hospital_code]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Hospital_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital_type_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital_type_code]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Hospital_type_code</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City_Code_Hospital</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[City_Code_Hospital]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>City_Code_Hospital</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital_region_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Hospital_region_code]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Hospital_region_code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Available Extra Rooms in Hospital</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Available Extra Rooms in Hospital]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Available Extra Rooms in Hospital</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Department</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Department]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Department</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ward_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ward_Type]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Ward_Type</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ward_Facility_Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ward_Facility_Code]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Ward_Facility_Code</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bed Grade</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bed Grade]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Bed Grade</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>patientid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[patientid]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>patientid</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City_Code_Patient</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[City_Code_Patient]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>City_Code_Patient</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of Admission</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type of Admission]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Type of Admission</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Severity of Illness</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Severity of Illness]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Severity of Illness</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visitors with Patient</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Visitors with Patient]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Visitors with Patient</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Admission_Deposit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Admission_Deposit]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Admission_Deposit</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stay</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stay]</local-name>
+            <parent-name>[Hospital_Data.csv]</parent-name>
+            <remote-alias>Stay</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Admission Deposit' datatype='integer' name='[Admission_Deposit]' role='measure' type='quantitative' />
+      <column caption='Total No. of Cases recorced' datatype='integer' name='[Calculation_1359805680256106496]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([case_id])' />
+      </column>
+      <column caption='City Code Hospital' datatype='integer' name='[City_Code_Hospital]' role='measure' type='quantitative' />
+      <column caption='City Code Patient' datatype='integer' name='[City_Code_Patient]' role='measure' type='quantitative' />
+      <column caption='Hospital code' datatype='integer' name='[Hospital_code]' role='dimension' type='ordinal' />
+      <column caption='Hospital region code' datatype='string' name='[Hospital_region_code]' role='dimension' type='nominal' />
+      <column caption='Hospital type code' datatype='string' name='[Hospital_type_code]' role='dimension' type='nominal' />
+      <column caption='Ward Facility Code' datatype='string' name='[Ward_Facility_Code]' role='dimension' type='nominal' />
+      <column caption='Ward Type' datatype='string' name='[Ward_Type]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Hospital_Data.csv' datatype='table' name='[__tableau_internal_object_id__].[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]' role='measure' type='quantitative' />
+      <column caption='Case Id' datatype='integer' name='[case_id]' role='dimension' type='ordinal' />
+      <column caption='Patientid' datatype='integer' name='[patientid]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/OAKPEN~1/AppData/Local/Temp/TableauTemp/#TableauTemp_034aiyk0r1aas412f3gjr1e4md1x.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/01/2024 10:30:34 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>case_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[case_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>case_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>318438</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hospital_code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hospital_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hospital_code</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hospital_type_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hospital_type_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hospital_type_code</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City_Code_Hospital</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[City_Code_Hospital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City_Code_Hospital</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hospital_region_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Hospital_region_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hospital_region_code</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Available Extra Rooms in Hospital</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Available Extra Rooms in Hospital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Available Extra Rooms in Hospital</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Department</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Department]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Department</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ward_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ward_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ward_Type</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ward_Facility_Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Ward_Facility_Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ward_Facility_Code</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bed Grade</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Bed Grade]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Bed Grade</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>patientid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[patientid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>patientid</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>199699</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City_Code_Patient</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[City_Code_Patient]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City_Code_Patient</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of Admission</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of Admission]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type of Admission</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Severity of Illness</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Severity of Illness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Severity of Illness</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Visitors with Patient</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Visitors with Patient]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Visitors with Patient</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Admission_Deposit</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Admission_Deposit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Admission_Deposit</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18581</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stay</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Stay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stay</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Hospital_Data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Nigeria&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Hospital_Data.csv' id='Hospital_Data.csv_F573A852FBA54070BE74BC0113060CC8'>
+            <properties context=''>
+              <relation connection='textscan.0dlotr90wp5qai18pnl2500vmglc' name='Hospital_Data.csv' table='[Hospital_Data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_NG' separator=','>
+                  <column datatype='integer' name='case_id' ordinal='0' />
+                  <column datatype='integer' name='Hospital_code' ordinal='1' />
+                  <column datatype='string' name='Hospital_type_code' ordinal='2' />
+                  <column datatype='integer' name='City_Code_Hospital' ordinal='3' />
+                  <column datatype='string' name='Hospital_region_code' ordinal='4' />
+                  <column datatype='integer' name='Available Extra Rooms in Hospital' ordinal='5' />
+                  <column datatype='string' name='Department' ordinal='6' />
+                  <column datatype='string' name='Ward_Type' ordinal='7' />
+                  <column datatype='string' name='Ward_Facility_Code' ordinal='8' />
+                  <column datatype='integer' name='Bed Grade' ordinal='9' />
+                  <column datatype='integer' name='patientid' ordinal='10' />
+                  <column datatype='integer' name='City_Code_Patient' ordinal='11' />
+                  <column datatype='string' name='Type of Admission' ordinal='12' />
+                  <column datatype='string' name='Severity of Illness' ordinal='13' />
+                  <column datatype='integer' name='Visitors with Patient' ordinal='14' />
+                  <column datatype='string' name='Age' ordinal='15' />
+                  <column datatype='integer' name='Admission_Deposit' ordinal='16' />
+                  <column datatype='string' name='Stay' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Hospital_Data' name='federated.0z0fpth11b7yxv1etgfbp06lr9zt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0z0fpth11b7yxv1etgfbp06lr9zt' />
+          <filter class='categorical' column='[federated.0z0fpth11b7yxv1etgfbp06lr9zt].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0z0fpth11b7yxv1etgfbp06lr9zt].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2705A4CA-25B2-4801-995B-9594DCF6EE9D}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0z0fpth11b7yxv1etgfbp06lr9zt].[:Measure Names]</field>
+            <field>[federated.0z0fpth11b7yxv1etgfbp06lr9zt].[none:Age:nk]</field>
+            <field>[federated.0z0fpth11b7yxv1etgfbp06lr9zt].[none:Hospital_region_code:nk]</field>
+            <field>[federated.0z0fpth11b7yxv1etgfbp06lr9zt].[none:Severity of Illness:nk]</field>
+            <field>[federated.0z0fpth11b7yxv1etgfbp06lr9zt].[none:Type of Admission:nk]</field>
+            <field>[federated.0z0fpth11b7yxv1etgfbp06lr9zt].[none:Ward_Facility_Code:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{15607ECC-0FE1-4BD9-ACE5-C0B4495700E5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAEZ0lEQVR4nO3ay27bRhiG4Y+kSEuW4gOSoOiqi97/rbRAL6CLOpGsgx2dTYnkTBdt2sZc
+      BVZF2N/7bChxIfxavJrhQEmMMQowlXY9ANClFwfQNI3KsjzFLMDZvTiAGKPquj7FLMDZsQWC
+      NQKANQKANQKANQKANQKANQKANQKANQKANQKAtd7XF7vdTlVVffcHhBB0PB75OwRepeSlf4eu
+      61plWWo0Gp1qJuBs2ALBGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHA
+      GgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHA
+      GgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHA
+      GgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHA
+      GgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAGgHAWiuAQ7nXer1RiLGLeYCzagUwmUzU
+      VAfdje91OJRar1Y6PO00mz8qNJUWs5k2u7KLWYGTawWQZrlu339QFhpNx58Us0KT6UyD9KjZ
+      w1xPTaHHxVQsEHgLWgE0Van7yVjqFcr7Q12PBkpj0HKzV55l2m9XCpFHB7wNSYzf/pY3daU6
+      RBV5rhij0jRVaBrVTVAW95oupR8+vlOW/hVBXdcqy1Kj0aiTLwC8RCuA70UAeM16z2887yFJ
+      kn/uJ0kixaj4n/vAa9bazB/LtX795Tc9fFkqStrvtqqboLu7O8XQaLOca7xYdzAqcHqtFSCE
+      SsN3t9puNipCqd8/z3UxvNawSHQ//qyi6ElJ0cWswMm1VoDiYqCrqyvlvUxZL9fg8lLvb2+U
+      ZamyLNVu/ySJ7Q/eBh6CYY0DfVhrBRCaSk3oYhTg/NqnQJuF/pjMtd6VOjxtNZ0/qqmPWq1W
+      Ko9HTcZjVRSCN6J1CqQYdTEYab180Hb5oBiikvBB6+pCl8uFdlXQ/tNUP//0YwfjAqfVDiBJ
+      1O8PdDik6vcHKgYjXRapsuGN4rZUnSW6vrnuYFTg9FqnQDEGSenf16imier1Un09+qzrWlnW
+      U5r++55TILxWrRUgSdJvrumzp4Q8z///qYAz4RgU1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA
+      1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1ggA1v4ENz4s
+      APbhbGgAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
